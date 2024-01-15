@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="48" id="lm2-9I-007" customClass="FormTextCell" customModule="Form" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="552" height="48"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lm2-9I-007" id="atm-v5-SXu">
+                <rect key="frame" x="0.0" y="0.0" width="552" height="48"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ti-Bc-cgP" customClass="FormContainerView" customModule="Form" customModuleProvider="target">
+                        <rect key="frame" x="16" y="0.0" width="520" height="48"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LfG-Na-lUE">
+                                <rect key="frame" x="16" y="13.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1h-J5-lnu">
+                                <rect key="frame" x="58" y="13.5" width="446" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="c1h-J5-lnu" secondAttribute="trailing" constant="16" id="9rW-x8-LpU"/>
+                            <constraint firstItem="LfG-Na-lUE" firstAttribute="leading" secondItem="6Ti-Bc-cgP" secondAttribute="leading" constant="16" id="BNZ-zj-kLx"/>
+                            <constraint firstItem="LfG-Na-lUE" firstAttribute="centerY" secondItem="6Ti-Bc-cgP" secondAttribute="centerY" id="bvb-ZF-7Pt"/>
+                            <constraint firstItem="c1h-J5-lnu" firstAttribute="leading" secondItem="LfG-Na-lUE" secondAttribute="trailing" id="gJb-2y-a9r"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="j30-L1-oRy"/>
+                            <constraint firstItem="c1h-J5-lnu" firstAttribute="centerY" secondItem="LfG-Na-lUE" secondAttribute="centerY" id="lnt-Fd-xDa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="6Ti-Bc-cgP" secondAttribute="trailing" constant="16" id="E1t-ZK-nQw"/>
+                    <constraint firstAttribute="bottom" secondItem="6Ti-Bc-cgP" secondAttribute="bottom" id="HSd-xI-9iz"/>
+                    <constraint firstItem="6Ti-Bc-cgP" firstAttribute="top" secondItem="atm-v5-SXu" secondAttribute="top" id="iG4-W5-E64"/>
+                    <constraint firstItem="6Ti-Bc-cgP" firstAttribute="leading" secondItem="atm-v5-SXu" secondAttribute="leading" constant="16" id="sOO-Ah-lnO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="containerView" destination="6Ti-Bc-cgP" id="bry-yq-k4T"/>
+                <outlet property="titleLabel" destination="LfG-Na-lUE" id="SC7-5o-gPT"/>
+                <outlet property="valueLabel" destination="c1h-J5-lnu" id="wO6-YW-Hsy"/>
+            </connections>
+            <point key="canvasLocation" x="-642.02898550724638" y="58.258928571428569"/>
+        </tableViewCell>
+    </objects>
+</document>
